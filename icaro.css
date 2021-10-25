@@ -1,0 +1,131 @@
+*{
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+}
+	body{
+		min-height: 100vh;
+}
+		.inicio{
+			min-height: 100vh;
+			position: relative;
+			
+		}
+		.inicio > form{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			background-color: #C8E0E6;
+			border: 1px dashed black; 
+			border-radius: 1em;
+			width: 450px;
+			height: 550px;
+		}
+
+		.iniciot > form{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			background-color: #C8E0E6;
+			border: 1px dashed black; 
+			border-radius: 1em;
+			width: 450px;
+			height: 400px;
+		}
+
+		h1{
+			color: #353535;
+			font-size: 40px;
+			font-weight: bold;
+			text-align: center;
+			margin: 10px 0 10px 0;
+		}
+
+		h1:after{
+			content: ' ';
+			display: block;
+			width: 100%;
+			height: 2px;
+			margin-top: 1px;
+			background: #353535;
+		}
+		h3{
+			font-weight: bold;
+			text-align: center;
+			margin: 10px 0 10px 0;
+		}
+		.desev{
+			font-size: 16px;
+			padding: 2px 0 10px 0;
+			font-weight: bold;
+			text-align: center;
+			padding-bottom: 30px
+		}
+		.dese input[type=text]
+		{
+			margin: 0 0 20px 20px;
+			border: 2px solid #353535;
+			width: 90%;
+			height: 30px;
+			color: #353535;
+			border-radius: 10px;
+			background: transparent;
+			font-size: 16px;
+			padding: 0 0 0 5px;
+			text-align: top;
+
+		}
+		span{
+			display: inline-block;
+
+		}
+		span input[type="submit"],
+			 input[type="reset"]
+		{
+			border: 2px solid #353535;
+			width: 195px;
+			height: 40px;
+			font-size: 16px;
+			background: white;
+			color: #353535;
+			border-radius: 10px;
+			cursor: pointer;
+			margin: 0 0 0 20px;
+		}
+		span a{
+			font-size: 14px;
+			background-color: white;
+			padding: 10px 40px 10px 40px;
+			margin-right:1px; 
+			margin-left: 20px;
+			text-align: center;
+			border-radius: 10px;
+			text-decoration: none;
+			border: 2px solid #353535;
+			color: #353535;
+
+		}
+		.msg textarea{
+			margin: 0 0 10px 20px;
+			border: 2px solid #353535;
+			width: 90%;
+			height: 30px;
+			color: #353535;
+			border-radius: 10px;
+			background: transparent;
+			font-size: 16px;
+			padding: 0 0 0 5px;
+			text-align: top;
+			width: 90%;
+			height: 125px;
+			background: transparent;
+			text-align: top;
+		}
+		.logo {
+		margin: 0 auto;
+		padding: 0;
+		display: block;
+		height: 130px;
+	}
