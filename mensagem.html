@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<link rel="short icon" href="icaro.png">
+	<link rel="stylesheet" type="text/css" href="icaro.css">
+	<title>Projeto Icaros</title>
+</head>
+<body style="background-color: #353535;">
+	<script>	
+	async function sentMessage(){
+		let from = document.getElementById("from").value;
+		let to = document.getElementById("to").value;
+		let message = document.getElementById("message").value;
+		
+		let data = {
+			"from": from,
+			"to": to,
+			"message":message
+		}
+			let jsondata = JSON.stringify(data);
+			try{
+				const response = await fetch("https://twcndh9sia.execute-api.us-east-1.amazonaws.com/Teste/chatmessage-post", {
+					method: 'POST',
+					body: jsondata,
+				})
+				.then((response) => {
+					if(!response.ok){
+						throw new Error(e)
+					}else{
+						console.log(response.status)
+					}
+					
+				})
+			}catch(e){
+				console.error(e);
+			}
+			clearForm();
+		}
+
+		function clearForm(){
+			from.value = "";
+			to.value = "";
+			message.value = "";
+		}
+
+		
+		
+	</script>
+	<div class="inicio">
+	<form name="userForm" action="javascript:sentMessage()" method="POST">
+		<p><img src="icaro.png" class="logo"><h1>Bem vindo</h1></p>
+
+		<h3>Mensagem</h3>
+
+		<div class="dese">
+		<input id="from" type="text" name="txtreme" placeholder="Remetente" >
+		<input id="to" type="text" name="txtSenha" placeholder="Destinatario" >
+		<div class="msg">
+		<textarea id="message" type="text" name="txtmgs" placeholder="Mensagem" cols="32" ></textarea>
+		</div>
+		</div>
+
+		<span>
+		<input type="submit" value="submit">
+		<input type="reset" value="reset">
+		</span>		
+	</form>
+
+	</div>
+</body>
+</html>
