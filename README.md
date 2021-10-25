@@ -1,2 +1,2 @@
 # ProjetoFaculdade
-Chat em nuvem para a matéria de devops (em andamento)
+Chat desenvolvido em nuvem para a matéria de devops (em andamento)
